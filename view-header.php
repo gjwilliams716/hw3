@@ -19,7 +19,7 @@
   </button>
 
 <nav class="nav nav-pills nav-justified">
-  <a class="nav-item nav-link active" href="/">Home</a>
+  <a class="nav-item nav-link active" href="index.php">Home</a>
   <a class="nav-item nav-link" href="players.php">Players</a>
   <a class="nav-item nav-link" href="courses.php">Teams</a>
   <a class="nav-item nav-link" href="past-contracts.php">Past Contracts</a>
