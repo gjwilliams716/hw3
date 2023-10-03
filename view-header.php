@@ -13,16 +13,15 @@
   <body>
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Navigation</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
 <nav class="nav nav-pills nav-justified">
   <a class="nav-item nav-link active" href="/">Home</a>
-  <a class="nav-item nav-link" href="post.php">Post</a>
-  <a class="nav-item nav-link" href="post-result.php">Post Result</a>
-  <a class="nav-item nav-link disabled" href="get.php">Get</a>
-  <a class="nav-item nav-link disabled" href="get-result.php">Get Result</a>
+  <a class="nav-item nav-link" href="players.php">Players</a>
+  <a class="nav-item nav-link" href="courses.php">Teams</a>
+  <a class="nav-item nav-link" href="past-contracts.php">Past Contracts</a>
 </nav>
 </nav>
