@@ -4,7 +4,7 @@
   
   $pageTitle= "Contracts by Player";
   include "view-header.php";
-  $contract = selectContractsByCourse($_POST['cid']);
+  $contracts = selectContractsByPlayer($_POST['cid']);
   include "view-contracts-by-player.php";
   include "view-footer.php";
 ?>
