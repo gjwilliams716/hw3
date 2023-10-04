@@ -17,7 +17,7 @@
               <td><?php echo $player['player_id'] ?></td>
               <td><?php echo $player['player_name'] ?></td>
               <td><?php echo $player['player_team'] ?></td>
-              <td><a href="teams-by-player.php?id=<?php echo $player['player_id'] ?>">Team</a></td>
+              <td><a href="teams-by-player.php?id=<?php echo $player['player_id'] ?>">Teams</a></td>
             </tr>
        <?php
           }
