@@ -2,7 +2,7 @@
 function selectTeams() {
 try {
 $conn = get_db_connection();
-$stmt = $conn->prepare("SELECT team_id, team_name, team_owner FROM course");
+$stmt = $conn->prepare("SELECT team_id, team_name, team_owner FROM 'team'");
 $stmt->execute();
 $result = $stmt->get_result();
 $conn->close();
