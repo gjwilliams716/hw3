@@ -1,15 +1,10 @@
 <?php
-function selectTeams() {
-try {
-$conn = get_db_connection();
-$stmt = $conn->prepare("SELECT team_id, team_name, team_owner FROM course");
-$stmt->execute();
-$result = $stmt->get_result();
-$conn->close();
-return $result;
-} catch (Exception $e) {
-$conn->close();
-throw $e;
-}
-}
+  require_once("util-db.php");
+  require_once("model-teams.php");
+  
+  $pageTitle= "Teams";
+  include "view-header.php";
+  $teams = selectTeams();
+  include "view-players.php";
+  include "view-footer.php";
 ?>
