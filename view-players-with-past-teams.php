@@ -13,13 +13,7 @@
               $teams = selectTeamsByPlayer($player['player_id']);
                 while ($team = $teams->fetch_assoc()){
                     ?>
-                      <li class="list-group-item"><?php echo $team['team_name']; ?> - <?php echo $contract['team_owner']; ?> - <?php echo $contract['contract_length']; ?> - <?php echo $contract['contract_amount']; ?> - <?php echo $contract['contract_incentives']; ?></li>
-                    <td><?php echo $contract['team_id']; ?></td>
-                    <td><?php echo $contract['team_name']; ?></td>
-                    <td><?php echo $contract['team_owner']; ?></td>
-                    <td><?php echo $contract['contract_length']; ?></td>
-                    <td><?php echo $contract['contract_amount']; ?></td>
-                    <td><?php echo $contract['contract_incentives']; ?></td>
+                      <li class="list-group-item"><?php echo $contract['team_name']; ?> - <?php echo $contract['team_owner']; ?> - <?php echo $contract['contract_length']; ?> - <?php echo $contract['contract_amount']; ?> - <?php echo $contract['contract_incentives']; ?></li>
                   <?php    
                 }
             ?>
