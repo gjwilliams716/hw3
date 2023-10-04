@@ -4,7 +4,7 @@
   
   $pageTitle= "Teams by Player";
   include "view-header.php";
-  $teams = selectTeamsByInstructor($_GET['id']);
+  $teams = selectTeamsByPlayer($_GET['id']);
   include "view-teams-by-player.php";
   include "view-footer.php";
 ?>
