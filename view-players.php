@@ -16,6 +16,7 @@
               <td><?php echo $player['player_id'] ?></td>
               <td><?php echo $player['player_name'] ?></td>
               <td><?php echo $player['player_team'] ?></td>
+              <td><a href="">Team</a></td>
             </tr>
        <?php
           }
