@@ -16,9 +16,12 @@
 while (Steam = $teams->fetch_assoc()) {
 ?>
 <tr>
-  <td><?php echo $course['course_id']; ?></td>
-  <td><?php echo $course['course_number']; ?></td>
-  <td><?php echo $course['course_description']; ?></td>
+  <td><?php echo $team['team_id']; ?></td>
+  <td><?php echo $team['team_name']; ?></td>
+  <td><?php echo $team['team_owner']; ?></td>
+  <td><?php echo $team['contract_length']; ?></td>
+  <td><?php echo $team['contract_amount']; ?></td>
+  <td><?php echo $team['contract_incentives']; ?></td>
 </tr>
 <?php
 }
