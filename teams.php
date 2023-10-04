@@ -5,6 +5,6 @@
   $pageTitle= "Teams";
   include "view-header.php";
   $teams = selectTeams();
-  include "view-players.php";
+  include "view-teams.php";
   include "view-footer.php";
 ?>
