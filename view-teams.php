@@ -10,7 +10,7 @@
 </thead>
 <tbody>
 <?php
-while (Steam = $teams->fetch_assoc()) {
+while ($team = $teams->fetch_assoc()) {
 ?>
 <tr>
   <td><?php echo $team['team_id']; ?></td>
