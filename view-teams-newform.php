@@ -26,7 +26,9 @@
             <input type="text" class="form-control" id="tOwner" name="tOwner">
           </div>
         <input type="hidden" name="actionType" value="Add">
+        <input type="hidden" name="actionType" value="Edit">
         <button type="submit" class="btn btn-primary">Save</button>
+        
       </form>
         
       </div>
