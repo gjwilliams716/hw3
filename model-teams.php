@@ -27,7 +27,7 @@ throw $e;
 }
 
 
-updateTeam($tName, $tOwner) {
+function updateTeam($tName, $tOwner) {
 try {
 $conn = get_db_connection();
 $stmt = $conn->prepare("update `team` set `team_name` = ?, 'team_owner` = ? WHERE team_id = ?");
