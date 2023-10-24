@@ -24,6 +24,7 @@
                   <label for="tOwner" class="form-label">Team Owner</label>
                   <input type="text" class="form-control" id="tOwner" name="tOwner">
                 </div>
+            <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
         </form>
       </div>
