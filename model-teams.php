@@ -31,7 +31,7 @@ throw $e;
 function updateTeam($tName, $tOwner, $tid) {
 try {
 $conn = get_db_connection();
-$stmt = $conn->prepare("update `team` set `team_name` = ?, 'team_owner` = ? WHERE team_id = ?");
+$stmt = $conn->prepare("update `team` set `team_name` = ?, `team_owner` = ? WHERE team_id = ?");
 $stmt->bind_param("ssi", $tName, $tOwner, $tid);
 $success = $stmt->execute();
 $conn->close();
