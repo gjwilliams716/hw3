@@ -16,8 +16,8 @@
         break;
 
         case "Edit":
-        if (updateTeam($_POST['tName'], $_POST['tOwner'])){
-        echo '<div class="alert alert-success" role="alert">Team Added.</div>';
+        if (updateTeam($_POST['tName'], $_POST['tOwner'], $_POST['cid'])){
+        echo '<div class="alert alert-success" role="alert">Team Edited.</div>';
         }else{
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
         }
