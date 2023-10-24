@@ -15,6 +15,14 @@
         }
         break;
 
+        case "Edit":
+        if (updateTeam($_POST['tName'], $_POST['tOwner'])){
+        echo '<div class="alert alert-success" role="alert">Team Added.</div>';
+        }else{
+        echo '<div class="alert alert-danger" role="alert">Error.</div>';
+        }
+        break;
+        
         case "Delete":
         if (deleteTeam($_POST['cid'])){
         echo '<div class="alert alert-success" role="alert">Team Deleted.</div>';
