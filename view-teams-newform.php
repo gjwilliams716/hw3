@@ -15,11 +15,18 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+      <form>
+          <div class="mb-3">
+            <label for="tName" class="form-label">Team Name</label>
+            <input type="text" class="form-control" id="tName" name="tName">
+          </div>
+          <div class="mb-3">
+            <label for="tOwner" class="form-label">Team Owner</label>
+            <input type="text" class="form-control" id="tOwner" name="tOwner">
+          </div>
+      </form>
+        
       </div>
     </div>
   </div>
