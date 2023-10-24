@@ -30,6 +30,9 @@ while ($team = $teams->fetch_assoc()) {
   <td><?php echo $team['team_owner']; ?></td>
   
   <td>
+    <?php
+        include "view-teams-editform.php";
+    ?>
   </td>
 
   <td>
