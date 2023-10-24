@@ -44,7 +44,7 @@ throw $e;
 function deleteTeam($tid) {
 try {
 $conn = get_db_connection();
-$stmt = $conn->prepare("delete from team where team_id=?");
+$stmt = $conn->prepare("delete from `team` where team_id=?");
 $stmt->bind_param("i", $tid);
 $success = $stmt->execute();
 $conn->close();
