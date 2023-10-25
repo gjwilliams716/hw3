@@ -26,4 +26,48 @@ $conn->close();
 throw $e;
 }
 }
+
+function insertPlayer($pName, $pTeam) {
+try {
+$conn = get_db_connection();
+$stmt = $conn->prepare("INSERT INTO `player` (`player_name`, `player_team`) VALUES (?, ?)");
+$stmt->bind_param("ss", $tName, $tOwner);
+$success = $stmt->execute();
+$conn->close();
+  return $success;
+} catch (Exception $e) {
+$conn->close();
+throw $e;
+}
+}
+
+
+function updatePlayer($pName, $pTeamr, $pid) {
+try {
+$conn = get_db_connection();
+$stmt = $conn->prepare("update `player` set `player_name` = ?, `player_team` = ? WHERE player_id = ?");
+$stmt->bind_param("ssi", $tName, $tOwner, $pid);
+$success = $stmt->execute();
+$conn->close();
+  return $success;
+} catch (Exception $e) {
+$conn->close();
+throw $e;
+}
+}
+
+
+function deletePlayer($pid) {
+try {
+$conn = get_db_connection();
+$stmt = $conn->prepare("delete from `player` where player_id=?");
+$stmt->bind_param("i", $pid);
+$success = $stmt->execute();
+$conn->close();
+  return $success;
+} catch (Exception $e) {
+$conn->close();
+throw $e;
+}
+}
 ?>
