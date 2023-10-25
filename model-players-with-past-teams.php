@@ -42,7 +42,7 @@ throw $e;
 }
 
 
-function updatePlayer($pName, $pTeamr, $pid) {
+function updatePlayer($pName, $pTeam, $pid) {
 try {
 $conn = get_db_connection();
 $stmt = $conn->prepare("update `player` set `player_name` = ?, `player_team` = ? WHERE player_id = ?");
