@@ -13,7 +13,7 @@
               $teams = selectTeamsByPlayer($player['player_id']);
                 while ($team = $teams->fetch_assoc()){
                     ?>
-                      <li class="list-group-item"><?php include view-playerspast-editform.php ?><?php echo $player['player_name']; ?> - <?php echo $player['player_team']; ?></li>
+                      <li class="list-group-item"><?php include "view-playerspast-editform.php" ?><?php echo $player['player_name']; ?> - <?php echo $player['player_team']; ?></li>
 
                       <?php    
                 }
