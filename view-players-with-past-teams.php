@@ -14,7 +14,11 @@
                 while ($team = $teams->fetch_assoc()){
                     ?>
                       <li class="list-group-item"><?php echo $player['player_name']; ?> - <?php echo $player['player_team']; ?></li>
-                  <?php    
+
+                      <?php
+                      include view-playerspast-editform.php
+                      ?>
+                      <?php    
                 }
             ?>
                 </ul>
