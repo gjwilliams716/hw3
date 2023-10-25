@@ -7,23 +7,23 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade in" id="newPlayerPModal" tabindex="-1" aria-labelledby="teamModalLabel" aria-hidden="true">
+<div class="modal fade in" id="newPlayerPModal" tabindex="-1" aria-labelledby="newPlayerPModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="teamModalLabel">New Team</h1>
+        <h1 class="modal-title fs-5" id="newPlayerPModalLabel">New Player</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
 
       <form method="post" action="">
           <div class="mb-3">
-            <label for="tName" class="form-label">Team Name</label>
-            <input type="text" class="form-control" id="tName" name="tName">
+            <label for="pName" class="form-label">Player Name</label>
+            <input type="text" class="form-control" id="pName" name="pName">
           </div>
           <div class="mb-3">
-            <label for="tOwner" class="form-label">Team Owner</label>
-            <input type="text" class="form-control" id="tOwner" name="tOwner">
+            <label for="pTeam" class="form-label">Player Team</label>
+            <input type="text" class="form-control" id="pTeam" name="pTeam">
           </div>
         <input type="hidden" name="actionType" value="Add">
         <button type="submit" class="btn btn-primary">Save</button>
