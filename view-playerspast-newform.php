@@ -22,7 +22,7 @@
             
           <?php
           $playerList = selectPlayersInput();
-          include "view-player-input-list.php"
+          include "view-player-input-list.php";
           ?>
             
           </div>
