@@ -21,7 +21,8 @@
             <label for="pName" class="form-label">Player Name</label>
             
           <?php
-          $playerList = selectPlayerInput();
+          $playerList = selectPlayersInput();
+          include "view-player-input-list.php"
           ?>
             
           </div>
