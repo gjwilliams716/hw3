@@ -1,6 +1,7 @@
 <h1>Players With Past Teams</h1>
 
 <div class="card-group">
+      <div><?php include "view-playerspast-newform.php" ?></div>
       <?php 
           while ($player = $players->fetch_assoc()){
           ?>
